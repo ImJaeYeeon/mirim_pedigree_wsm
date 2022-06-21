@@ -1,6 +1,6 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
 /* Variables CSS */
 
@@ -15,8 +15,8 @@
     --body-color: #fff;
     --container-color: #fff;
     /* font */
-    --body-font: 'Noto Sans KR', sans-serif;
-    --biggest-font-size: 2.25rem;
+    --body-font: 'Do Hyeon', sans-serif;
+    --biggest-font-size: 3rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -25,7 +25,7 @@
     --smaller-font-size: 0.75rem;
     /* font weight */
     --font-medium: 500;
-    --font-bold: 700;
+    --font-regular: 400;
     /* z-index */
     --z-index: 100;
 }
@@ -45,6 +45,7 @@ body {
     font-size: var(--nomal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 h1,
@@ -54,18 +55,20 @@ h3 {
     color: var(--title-color);
 }
 
+.logo_img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    /*이미지보다 창 크기가 작아져도 이미지를 다 유지하면서 축소하자*/
-    height: auto;
 }
 
 
@@ -77,7 +80,7 @@ img {
     margin-right: 0 auto;
 }
 
-img {
+.logoimg {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -101,7 +104,8 @@ nav {
 }
 
 nav i {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    margin: 2rem;
 }
 
 .nav-logo {
@@ -139,6 +143,7 @@ nav i {
     /* visibility: hidden; 보이지는 않지만, 자리는 차치 */
     display: none;
     gap: 15rem;
+    display: none;
 }
 
 .nav-toggle i {
@@ -156,6 +161,69 @@ nav i {
     color: black;
     /* 한 줄 전체를 차지해서 링크 동작 하도록 */
 }
+.notice{
+    width: 1000px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+.flex .col img {
+    width: 100%;
+    height: auto;
+    }
+    
+    .flex {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    max-width: 100%;
+    margin: auto;
+    }
+    
+    .flex .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    margin: 1em;
+    }
+    
+    .col {
+      color: #424346;
+      background: var(--compare_summer_color_bright);
+    }
+
+img {
+    max-width: 100%;
+    /*이미지보다 창 크기가 작아져도 이미지를 다 유지하면서 축소하자*/
+    height: auto;
+}
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #c4c4c4;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+#menu ul li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-footer {
+    color: rgb(75, 75, 75);
+}
+
 
 
 /* breakpoints */
@@ -165,8 +233,13 @@ nav i {
 
 
 /* moblie */
+@media (max-width: 1000px) {
+    .flex {
+      flex-wrap: wrap;
+    }
+    }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .nav-toggle {
         display: block;
         /* nav-toggle 보이자 */
@@ -184,13 +257,19 @@ nav i {
         position: absolute;
         left: 0;
         right: 0;
-        top: 44px;
+        top: 100px;
         /* width: 100%; */
-        background-color: #2f2f2f;
+        background-color: rgb(172, 172, 172);
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
     }
     .nav-item {
         padding: 0.5rem 0;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid gray;
         text-align: center;
+    }
+    .show-menu {
+        height: 164px;
     }
 }
