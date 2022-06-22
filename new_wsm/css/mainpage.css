@@ -134,6 +134,7 @@ nav i {
 }
 .nav-menu{
     width: 100%;
+    font-size: var(--h3-font-size);
 }
 .nav-menu a{
     column-gap: 50rem;
@@ -163,7 +164,7 @@ nav i {
 }
 .notice{
     width: 1000px;
-    height: 500px;
+    height: 600px;
     display: block;
     margin: auto;
 }
