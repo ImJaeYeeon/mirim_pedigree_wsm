@@ -192,16 +192,17 @@ footer {
 }
 
 table{
+    border-collapse: collapse;
     font-size: var(--h3-font-size);
     margin-top: 4.5rem;
-    width: 50%;
+    width: 60%;
 }
-table,tr,td{
-    border-collapse : collapse;
-    border : 1px solid black;
+td{
+    border: 1px solid black;
+    padding: 15px 5px 10px 5px;
 }
-.top-table{
-    border: none;
+th{
+    text-align: left;
 }
 
 
