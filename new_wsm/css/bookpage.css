@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+:root {
+    /* color */
+    --first-color: hsl(160, 100%, 25%);
+    --first-color-bright: hsl(160, 100%, 40%);
+    --title-color: hsl(160, 0%, 0%);
+    --text-color: hsl(160, 0%, 47%0);
+    --body-color: #fff;
+    --container-color: #fff;
+    --body-font: 'Do Hyeon', sans-serif;
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --font-medium: 500;
+    --font-regular: 400;
+    --z-index: 100;
+}
+
+/* BASE */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: var(--body-font);
+    font-size: var(--nomal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* nav */
+
+.container {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.logoimg {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 48%;
+    margin-left: -100px;
+}
+
+.top {
+    height: 100px;
+    background-color: var(--first-color);
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+nav {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav i {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.nav-logo {
+    color: #fff;
+    width: 960px;
+    position: absolute;
+    left: 48%;
+    margin-left: -20px;
+    font-size: var(--biggest-font-size);
+}
+
+.nav-menu ul {
+    margin: 0 auto;
+}
+
+.nav-menu ul li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav-menu ul li a {
+    display: block;
+}
+
+.nav-menu {
+    width: 850px;
+    font-size: var(--h3-font-size);
+    margin: auto;
+}
+
+.nav-menu a {
+    column-gap: 50rem;
+}
+
+.nav-toggle {
+    display: none;
+    gap: 15rem;
+}
+
+.nav-toggle i {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 0.75rem;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.nav-link {
+    display: block;
+    color: black;
+}
+
+
+/* footer */
+
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #c4c4c4;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+#menu ul li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-footer {
+    color: rgb(75, 75, 75);
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 40px;
+    margin: 44px 2rem;
+}
+
+.card {
+    background-color: #f3f3f3;
+    border-radius: 1rem;
+    flex: 1 0 240px;
+    max-width: 300px;
+}
+
+.card-image {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공씨.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image1 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공자.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image2 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공파.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image3 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공에.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image4 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공자스.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image5 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/혼공머신.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image6 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 깃&깃허브.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image7 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 자바.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image8 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 씨언어.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image9 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 안드로이드 코틀린.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image0 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 안드로이드 자바.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image11 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/두잇 자스.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image12 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/포토샵일러스트.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image13 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/프리미어애프터.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image14 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/디자인테크닉.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image15 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/일러\ 1급.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image16 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/인디자인\ 1급.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image17 {
+    height: 0;
+    padding-bottom: 100%;
+    background: url("../bookpageimg/포토샵\ 2급.png");
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.bk {
+    color: black;
+}
+
+.bk:hover {
+    color: gray;
+}
+
+.card-description {
+    margin: 1rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.card-menu {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/* moblie */
+
+@media (max-width: 1000px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+    }
+    .nav-logo {
+        margin: 0 auto;
+        left: 45%;
+    }
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        background-color: rgb(172, 172, 172);
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+    .show-menu {
+        height: 250px;
+    }
+    .notice {
+        width: 500px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
+}

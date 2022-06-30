@@ -55,14 +55,6 @@ h3 {
     color: var(--title-color);
 }
 
-.logo_img {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-}
-
 ul {
     list-style: none;
 }
@@ -84,7 +76,7 @@ a {
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 50%;
+    left: 48%;
     margin-left: -100px;
 }
 
@@ -94,7 +86,6 @@ a {
     margin-left: 0 auto;
     margin-right: 0 auto;
 }
-
 
 nav {
     height: 44px;
@@ -112,18 +103,12 @@ nav i {
     color: #fff;
     width: 960px;
     position: absolute;
-    left: 50%;
+    left: 48%;
     margin-left: -20px;
     font-size: var(--biggest-font-size);
 }
 
-.nav-menu ul{
-    width: 1000px;
-    margin: 0 auto;
-}
 .nav-menu ul li{
-    float: left;
-    width: 25%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -133,19 +118,17 @@ nav i {
     display: block;
 }
 .nav-menu{
-    width: 100%;
+    width: 850px;
     font-size: var(--h3-font-size);
-    text-align: center;
+    margin: auto;
 }
 .nav-menu a{
     column-gap: 50rem;
 }
 
 .nav-toggle {
-    /* visibility: hidden; 보이지는 않지만, 자리는 차치 */
     display: none;
     gap: 15rem;
-    display: none;
 }
 
 .nav-toggle i {
@@ -155,13 +138,13 @@ nav i {
 .nav-list {
     display: flex;
     column-gap: 0.75rem;
-    /*12px;*/
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .nav-link {
     display: block;
     color: black;
-    /* 한 줄 전체를 차지해서 링크 동작 하도록 */
 }
 
 .list {
@@ -249,6 +232,7 @@ th{
     }
     .nav-logo {
         margin: 0 auto;
+        left: 45%;
         /* 가운데 정렬 */
     }
     .nav-list {
@@ -267,22 +251,16 @@ th{
     .nav-item {
         padding: 0.5rem 0;
         border-bottom: 1px solid gray;
-        margin-left: 10%;
+        text-align: center;
+        width: 100%;
     }
     .show-menu {
         height: 250px;
     }
-
-    .list {
-        display: flex;
-        column-gap: 0.75rem;
-    }
-    
-    .item {
-        float: left;
-        width: 25%;
-        height: 50px;
-        line-height: 25px;
-        text-align: center;
+    .notice {
+        width: 500px;
+        height: 300px;
+        display: block;
+        margin: auto;
     }
 }

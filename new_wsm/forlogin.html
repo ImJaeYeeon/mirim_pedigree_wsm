@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/2436/premium/2436888.png?token=exp=1656499689~hmac=bd0dba6359106e19d2be999e9d7818b4" type="image/x-icon">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/forlogin.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="top">
+            </div><img src="https://www.e-mirim.hs.kr/fbgraph.png" alt="" class="logoimg"><a href="mainpage.html" class="nav-logo">미림족보</a>
+        </nav>
+
+        <table>
+            <form method="post" action="#">
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="test" maxlength="12" placeholder="이름을 입력하세요" /><br/></td>
+                </tr>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="test" maxlength="12" placeholder="아이디를 입력하세요" /><br/></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="pass" maxlength="12" placeholder="비밀번호를 입력하세요" /><br/></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" name="pass" maxlength="12" placeholder="비밀번호를 재입력하세요" /><br/></td>
+                </tr>
+
+                <tr>
+                    <td>전화번호</td>
+                    <td>
+                        <select name="num">
+                            <option value="number">010</option>
+                            <option value="number">011</option>
+                        </select>
+                        <input type="text" name="pnumber" />
+                        <input type="text" name="pnumber" />
+                        <br/></td>
+                </tr>
+
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="text" name="email" /> @
+                        <select name="mail">
+                        <option value="mail">선택</option>
+                        <option value="mail">naver.com</option>
+                        <option value="mail">gmail.com</option>
+                        <option value="mail">hanmail.net</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="but">
+                        <button type="submit" onclick='alert("회원가입이 완료되었습니다.")' class="butt">확인</button>
+                    </td>
+                </tr>
+
+            </form>
+            </form>
+        </table>
+
+
+        <div id='wrap'>
+            <footer>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#" class="nav-footer">주소</a></li> |
+                        <li><a href="#" class="nav-footer">메일</a></li> |
+                        <li><a href="#" class="nav-footer">고객센터</a></li> |
+                        <li><a href="#" class="nav-footer">웹 사이트 이용약관</a></li> |
+                        <li><a href="#" class="nav-footer">개인정보 처리방침</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>

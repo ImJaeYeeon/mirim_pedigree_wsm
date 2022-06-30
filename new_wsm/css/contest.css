@@ -1,35 +1,19 @@
-/* Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
-/* Variables CSS */
-
 :root {
-    /* color */
     --first-color: hsl(160, 100%, 25%);
-    --first-color-bright: hsl(160, 100%, 40%);
-    --second-color: hsl(339, 77%, 59%);
-    --third-color: hsl(42, 87%, 52%);
     --title-color: hsl(160, 0%, 0%);
     --text-color: hsl(160, 0%, 47%0);
     --body-color: #fff;
     --container-color: #fff;
-    /* font */
     --body-font: 'Do Hyeon', sans-serif;
     --biggest-font-size: 3rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --nomal-font-size: 1rem;
-    --small-font-size: 0.8rem;
-    --smaller-font-size: 0.75rem;
-    /* font weight */
     --font-medium: 500;
     --font-regular: 400;
-    /* z-index */
     --z-index: 100;
 }
-
 
 /* BASE */
 
@@ -55,14 +39,6 @@ h3 {
     color: var(--title-color);
 }
 
-.logo_img {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-}
-
 ul {
     list-style: none;
 }
@@ -71,9 +47,7 @@ a {
     text-decoration: none;
 }
 
-
 /* nav */
-
 
 .container {
     margin-left: 0 auto;
@@ -84,7 +58,7 @@ a {
     width: 80px;
     height: 80px;
     position: absolute;
-    left: 50%;
+    left: 48%;
     margin-left: -100px;
 }
 
@@ -94,7 +68,6 @@ a {
     margin-left: 0 auto;
     margin-right: 0 auto;
 }
-
 
 nav {
     height: 44px;
@@ -112,62 +85,64 @@ nav i {
     color: #fff;
     width: 960px;
     position: absolute;
-    left: 50%;
+    left: 48%;
     margin-left: -20px;
     font-size: var(--biggest-font-size);
 }
 
-.nav-menu ul{
-    width: 1000px;
+.nav-menu ul {
     margin: 0 auto;
 }
-.nav-menu ul li{
-    float: left;
-    width: 25%;
+
+.nav-menu ul li {
     height: 50px;
     line-height: 50px;
     text-align: center;
-
 }
-.nav-menu ul li a{
+
+.nav-menu ul li a {
     display: block;
 }
-.nav-menu{
-    width: 100%;
+
+.nav-menu {
+    width: 850px;
     font-size: var(--h3-font-size);
+    margin: auto;
 }
-.nav-menu a{
+
+.nav-menu a {
     column-gap: 50rem;
 }
 
 .nav-toggle {
-    /* visibility: hidden; 보이지는 않지만, 자리는 차치 */
     display: none;
     gap: 15rem;
-    display: none;
 }
 
 .nav-toggle i {
-    color: #fff;    
+    color: #fff;
 }
 
 .nav-list {
     display: flex;
     column-gap: 0.75rem;
-    /*12px;*/
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .nav-link {
     display: block;
     color: black;
-    /* 한 줄 전체를 차지해서 링크 동작 하도록 */
 }
+
+/* footer */
 
 #wrap {
     min-height: 100vh;
     position: relative;
     width: 100%;
 }
+
 footer {
     margin-top: 50px;
     width: 100%;
@@ -189,59 +164,55 @@ footer {
 .nav-footer {
     color: rgb(75, 75, 75);
 }
-.winner{
+
+.winner {
     font-size: 25px;
 }
-.notice{
+
+.notice {
     font-size: 25px;
 }
- table {
+
+table {
     width: 55%;
     border-collapse: collapse;
     margin: auto;
-  }
-  th, td {
+}
+
+th,
+td {
     border: 1px solid #444444;
     padding: 10px;
-  }
-  .table_title{
-   border: none;
-  }
+}
 
-
-/* breakpoints */
-
-
-/* 2K & 4K */
-
+.table_title {
+    border: none;
+}
 
 /* moblie */
+
 @media (max-width: 1000px) {
     .flex {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    }
+}
 
 @media screen and (max-width: 700px) {
     .nav-toggle {
         display: block;
-        /* nav-toggle 보이자 */
         position: absolute;
-        /* nav-logo 가운데 정렬 위치 */
         cursor: pointer;
     }
     .nav-logo {
         margin: 0 auto;
-        /* 가운데 정렬 */
+        left: 45%;
     }
     .nav-list {
         flex-direction: column;
-        /* align-items: center; */
         position: absolute;
         left: 0;
         right: 0;
         top: 100px;
-        /* width: 100%; */
         background-color: rgb(172, 172, 172);
         height: 0;
         overflow: hidden;
@@ -253,6 +224,6 @@ footer {
         text-align: center;
     }
     .show-menu {
-        height: 164px;
+        height: 250px;
     }
 }
